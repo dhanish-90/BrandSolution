@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="trainSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stopColor="#064e3b"/>
+      <stop offset="100%" stopColor="#022c22"/>
+    </linearGradient>
+    <linearGradient id="coachWrap" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stopColor="#047857"/>
+      <stop offset="50%" stopColor="#10b981"/>
+      <stop offset="100%" stopColor="#065f46"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#trainSky)"/>
+  <rect x="0" y="520" width="1200" height="155" fill="#0f172a"/>
+  <!-- Railway Tracks -->
+  <line x1="0" y1="550" x2="1200" y2="550" stroke="#cbd5e1" stroke-width="8"/>
+  <line x1="0" y1="590" x2="1200" y2="590" stroke="#cbd5e1" stroke-width="8"/>
+
+  <!-- Train Coach Body -->
+  <rect x="80" y="200" width="1040" height="300" rx="16" fill="url(#coachWrap)" stroke="#064e3b" stroke-width="4"/>
+  <!-- Windows -->
+  <rect x="140" y="240" width="160" height="90" rx="8" fill="#022c22" stroke="#6ee7b7" stroke-width="2"/>
+  <rect x="340" y="240" width="160" height="90" rx="8" fill="#022c22" stroke="#6ee7b7" stroke-width="2"/>
+  <rect x="540" y="240" width="160" height="90" rx="8" fill="#022c22" stroke="#6ee7b7" stroke-width="2"/>
+  <rect x="740" y="240" width="160" height="90" rx="8" fill="#022c22" stroke="#6ee7b7" stroke-width="2"/>
+  <rect x="940" y="240" width="140" height="90" rx="8" fill="#022c22" stroke="#6ee7b7" stroke-width="2"/>
+
+  <!-- Train Coach Advertising Wrap Strip -->
+  <rect x="100" y="360" width="1000" height="110" fill="#022c22" stroke="#10b981" stroke-width="3"/>
+  <text x="600" y="410" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="34" fill="#ffffff" letter-spacing="3">
+    INDIAN RAILWAYS TRAIN BRANDING
+  </text>
+  <text x="600" y="445" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="#6ee7b7">
+    PAN-INDIA INTER-CITY PASSENGER &amp; COMMUTER REACH
+  </text>
+
+  <!-- Wheels / Bogie -->
+  <circle cx="250" cy="520" r="35" fill="#1e293b" stroke="#cbd5e1" stroke-width="8"/>
+  <circle cx="450" cy="520" r="35" fill="#1e293b" stroke="#cbd5e1" stroke-width="8"/>
+  <circle cx="750" cy="520" r="35" fill="#1e293b" stroke="#cbd5e1" stroke-width="8"/>
+  <circle cx="950" cy="520" r="35" fill="#1e293b" stroke="#cbd5e1" stroke-width="8"/>
+</svg>

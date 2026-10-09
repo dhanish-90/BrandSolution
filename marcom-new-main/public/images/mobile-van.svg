@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stopColor="#1e3a8a"/>
+      <stop offset="50%" stopColor="#3b82f6"/>
+      <stop offset="100%" stopColor="#93c5fd"/>
+    </linearGradient>
+    <linearGradient id="vanBody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stopColor="#0284c7"/>
+      <stop offset="60%" stopColor="#0ea5e9"/>
+      <stop offset="100%" stopColor="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="ledScreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stopColor="#0f172a"/>
+      <stop offset="50%" stopColor="#1e293b"/>
+      <stop offset="100%" stopColor="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stopColor="#475569"/>
+      <stop offset="100%" stopColor="#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#skyGrad)"/>
+  
+  <!-- City Backdrop -->
+  <path d="M0 400 L80 320 L150 350 L220 280 L320 330 L450 250 L580 340 L700 290 L850 340 L980 270 L1100 320 L1200 290 V520 H0 Z" fill="#1e293b" opacity="0.6"/>
+
+  <!-- Ground -->
+  <rect x="0" y="500" width="1200" height="175" fill="url(#ground)"/>
+  <line x1="0" y1="580" x2="1200" y2="580" stroke="#facc15" stroke-dasharray="25 25" stroke-width="6"/>
+
+  <!-- Roadshow Stage Canopy / Hydraulic Wings -->
+  <polygon points="250,150 850,150 900,240 200,240" fill="#e11d48"/>
+  <text x="550" y="205" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="28" fill="#ffffff" letter-spacing="3">
+    EXPERIENTIAL ROADSHOW &amp; LIVE DEMO
+  </text>
+
+  <!-- Mobile Van Cabin & Body (Tata 407 / Canter Setup) -->
+  <rect x="220" y="240" width="660" height="230" rx="12" fill="url(#vanBody)" stroke="#0369a1" stroke-width="4"/>
+  <!-- Driver Cabin -->
+  <path d="M880 320 L990 350 L1020 420 L1020 470 H880 Z" fill="#0284c7" stroke="#0369a1" stroke-width="4"/>
+  <!-- Windshield -->
+  <path d="M890 330 L975 355 L995 410 H890 Z" fill="#e0f2fe" opacity="0.8"/>
+
+  <!-- LED Display Screen on Side of Van -->
+  <rect x="260" y="260" width="580" height="180" rx="8" fill="url(#ledScreen)" stroke="#facc15" stroke-width="3"/>
+  <text x="550" y="330" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="34" fill="#ffffff">
+    MARCOM BRAND SOLUTION
+  </text>
+  <text x="550" y="375" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="22" fill="#38bdf8">
+    PAN-INDIA MOBILE VAN ROADSHOWS
+  </text>
+  <text x="550" y="415" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f8fafc">
+    AUDIO-VISUAL ENGAGEMENT • LIVE SAMPLING • RURAL MANDIS
+  </text>
+
+  <!-- Hydraulic Stage Fold-out -->
+  <rect x="200" y="470" width="720" height="30" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Heavy Duty Truck Wheels -->
+  <circle cx="360" cy="500" r="55" fill="#0f172a" stroke="#475569" stroke-width="12"/>
+  <circle cx="360" cy="500" r="22" fill="#94a3b8"/>
+  <circle cx="780" cy="500" r="55" fill="#0f172a" stroke="#475569" stroke-width="12"/>
+  <circle cx="780" cy="500" r="22" fill="#94a3b8"/>
+  <circle cx="950" cy="500" r="50" fill="#0f172a" stroke="#475569" stroke-width="10"/>
+  <circle cx="950" cy="500" r="20" fill="#94a3b8"/>
+</svg>

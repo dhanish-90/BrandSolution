@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="signBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stopColor="#1e1b4b"/>
+      <stop offset="100%" stopColor="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="neonGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stopColor="#c084fc"/>
+      <stop offset="50%" stopColor="#a855f7"/>
+      <stop offset="100%" stopColor="#7e22ce"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#signBg)"/>
+
+  <!-- Modern Commercial Facade Cladding (ACP Panels) -->
+  <rect x="100" y="100" width="1000" height="475" rx="16" fill="#18181b" stroke="#3f3f46" stroke-width="4"/>
+  <!-- ACP Grid joints -->
+  <line x1="350" y1="100" x2="350" y2="575" stroke="#27272a" stroke-width="2"/>
+  <line x1="600" y1="100" x2="600" y2="575" stroke="#27272a" stroke-width="2"/>
+  <line x1="850" y1="100" x2="850" y2="575" stroke="#27272a" stroke-width="2"/>
+
+  <!-- Halo Light Glow Behind Signage -->
+  <rect x="180" y="200" width="840" height="260" rx="20" fill="#a855f7" opacity="0.15" filter="blur(20px)"/>
+
+  <!-- 3D Channel Letters -->
+  <rect x="200" y="210" width="800" height="240" rx="16" fill="#09090b" stroke="#a855f7" stroke-width="5"/>
+  <text x="600" y="320" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="64" fill="#ffffff" letter-spacing="6">
+    SIGNAGE &amp; FABRICATION
+  </text>
+  <text x="600" y="375" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="24" fill="#c084fc" letter-spacing="3">
+    3D ACRYLIC • ACP CLADDING • CNC • LED GLOW
+  </text>
+  <text x="600" y="415" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#a1a1aa">
+    IN-HOUSE INDUSTRIAL MANUFACTURING PLANT • IP67 WEATHERPROOF
+  </text>
+</svg>

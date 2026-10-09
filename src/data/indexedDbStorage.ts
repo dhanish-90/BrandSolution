@@ -1,0 +1,75 @@
+/**
+ * Robust IndexedDB Storage Helper for Photos and Media Folders
+ * IndexedDB provides 50MB - 1GB+ storage quota in modern browsers,
+ * completely eliminating localStorage 5MB QuotaExceededError.
+ */
+
+const DB_NAME = 'MarcomBrandSolutionDB';
+const DB_VERSION = 1;
+const STORE_NAME = 'photoCollections';
+export const COLLECTION_KEY = 'service_photo_collections';
+export const FOLDERS_KEY = 'photo_folders';
+
+function openDatabase(): Promise<IDBDatabase> {
+  return new Promise((resolve, reject) => {
+    if (typeof window === 'undefined' || !window.indexedDB) {
+      reject(new Error('IndexedDB not supported in this environment'));
+      return;
+    }
+
+    const request = window.indexedDB.open(DB_NAME, DB_VERSION);
+
+    request.onupgradeneeded = () => {
+      const db = request.result;
+      if (!db.objectStoreNames.contains(STORE_NAME)) {
+        db.createObjectStore(STORE_NAME);
+      }
+    };
+
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error);
+  });
+}
+
+/**
+ * Save data to IndexedDB by key
+ */
+export async function saveToIndexedDB<T>(data: T, key: string = COLLECTION_KEY): Promise<void> {
+  try {
+    const db = await openDatabase();
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction(STORE_NAME, 'readwrite');
+      const store = tx.objectStore(STORE_NAME);
+      const request = store.put(data, key);
+
+      request.onsuccess = () => resolve();
+      request.onerror = () => reject(request.error);
+      tx.oncomplete = () => db.close();
+    });
+  } catch (err) {
+    console.warn(`Could not save key "${key}" to IndexedDB:`, err);
+  }
+}
+
+/**
+ * Load data from IndexedDB by key
+ */
+export async function loadFromIndexedDB<T>(key: string = COLLECTION_KEY): Promise<T | null> {
+  try {
+    const db = await openDatabase();
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction(STORE_NAME, 'readonly');
+      const store = tx.objectStore(STORE_NAME);
+      const request = store.get(key);
+
+      request.onsuccess = () => {
+        resolve((request.result as T) || null);
+      };
+      request.onerror = () => reject(request.error);
+      tx.oncomplete = () => db.close();
+    });
+  } catch (err) {
+    console.warn(`Could not read key "${key}" from IndexedDB:`, err);
+    return null;
+  }
+}

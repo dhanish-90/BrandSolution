@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="eventBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stopColor="#451a03"/>
+      <stop offset="100%" stopColor="#0c0a09"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#eventBg)"/>
+  
+  <!-- Spotlights -->
+  <polygon points="100,0 250,550 450,550" fill="#f59e0b" opacity="0.15"/>
+  <polygon points="1100,0 950,550 750,550" fill="#f59e0b" opacity="0.15"/>
+
+  <!-- Stage Platform -->
+  <polygon points="150,520 1050,520 1150,675 50,675" fill="#1c1917" stroke="#78350f" stroke-width="4"/>
+
+  <!-- Curved 3D LED Video Backdrop -->
+  <rect x="220" y="150" width="760" height="320" rx="16" fill="#0c0a09" stroke="#f59e0b" stroke-width="4"/>
+  <text x="600" y="270" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="44" fill="#ffffff">
+    CORPORATE SUMMIT &amp; AWARDS
+  </text>
+  <text x="600" y="325" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#fbbf24">
+    END-TO-END STAGE PRODUCTION &amp; AUDIO-VISUALS
+  </text>
+  <text x="600" y="375" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#fef3c7">
+    PRODUCT LAUNCHES • DEALER CONFERENCES • 500-5000 DELEGATES
+  </text>
+</svg>
